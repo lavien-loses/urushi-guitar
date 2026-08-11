@@ -8,8 +8,8 @@
   <link rel="shortcut icon" href="/rogo/svg/icon1_kirigiri.svg" type="image/x-icon">
   <link rel="apple-touch-icon" href="/rogo/svg/icon1_kirigiri.svg">
   <link rel="icon" type="image/svg" href="/rogo/svg/icon1_kirigiri.svg">
-  <link href="./css/reset.css" rel="stylesheet" type="text/css">
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css?v=2" rel="stylesheet" type="text/css">
+  <link href="./css/main.css?v=5" rel="stylesheet" type="text/css">
 
 
   <!-- Google tag (gtag.js) -->
@@ -31,69 +31,41 @@
       </span>
     </a>
   </div>
+  <!-- ナビゲーション -->
+  <button class="nav_toggle" id="nav_toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav_drawer">
+    <span></span><span></span><span></span>
+  </button>
 
+  <div class="nav_overlay" id="nav_overlay"></div>
 
+  <nav class="nav_drawer" id="nav_drawer" aria-hidden="true">
+    <button class="nav_close" id="nav_close" type="button" aria-label="メニューを閉じる">×</button>
 
+    <ul class="nav_drawer_list">
+      <li class="nav_drawer_top"><a href="./index.html">TOP</a></li>
+      <li class="nav_drawer_top"><a href="./index.html#event_div1">このサイトについて</a></li>
+    </ul>
 
-  <header>
-    <div class="nav_btn">
-      <span class="menu_icon">トップ</span>
-      <span class="menu_icon">ギター<br>制作</span>
-      <span class="menu_icon">ギターケース<br>制作</span>
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_guitar">拭き漆ギター制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./g_preparation.html">制作に向けた準備</a></li>
+        <li><a href="./g_making.html">ギター本制作</a></li>
+        <li><a href="./g_paint.html">拭き漆での塗装</a></li>
+        <li><a href="./g_finish.html">試奏・調整</a></li>
+      </ul>
     </div>
-    <div id="header_box">
-      <span>
-        メニュ〜
-      </span>
-      <div class="menu_box">
-        <ul class="menu_left">
-          <li class="menu_li weight">
-            <a href="index.html">TOP</a>
-          </li>
-          <li class="menu_li">
-            <a href="./index.html#event_div1">このサイトについて</a>
-          </li>
-        </ul>
 
-        <ul class="menu_center m_flex">
-          <li class="menu_li weight">
-            <a href="work_process.html">拭き漆ギター制作</a>
-          </li>
-          <li class="menu_li">
-            <a href="g_preparation.html">制作に向けた準備</a>
-          </li>
-          <li class="menu_li">
-            <a href="g_making.html">ギター本制作</a>
-          </li>
-          <li class="menu_li">
-            <a href="g_paint.html">塗装</a>
-          </li>
-          <li class="menu_li">
-            <a href="#">完成</a>
-          </li>
-        </ul>
-
-        <ul class="menu_right m_flex">
-          <li class="menu_li weight">
-            <a href="work_process.html#make_case">制作</a>
-          </li>
-          <li class="menu_li">
-            <a href="work_case.html">構想・設計</a>
-          </li>
-          <li class="menu_li">
-            <a href="work_case.html">制作</a>
-          </li>
-          <li class="menu_li">
-            <a href="work_case.html">装飾</a>
-          </li>
-          <li class="menu_li">
-            <a href="work_case.html">完成</a>
-          </li>
-        </ul>
-      </div>
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_case">寄木細工ギターケース制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./c_design.html">構想・設計</a></li>
+        <li><a href="./c_making.html">ケース本制作</a></li>
+        <li><a href="./c_decoration.html">ケース装飾</a></li>
+        <li><a href="./c_interior.html">内装制作</a></li>
+      </ul>
     </div>
-  </header>
-
+  </nav>
 
   <main>
     <section id="l_key">
@@ -108,7 +80,7 @@
         工程一覧
       </h1>
       <p class="h1_explanetion">
-        拭き漆ギター制作，ムク作りギターケース制作の工程一覧となっています．
+        拭き漆ギター制作、ムク作りギターケース制作の工程一覧となっています。
       </p>
 
       <div id="all_box"><!--flexの親要素-->
@@ -120,7 +92,7 @@
           <div class="order_box">
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/g_pre.jpg">
+                <a href="./g_preparation.html"><img src="./img/work_process/g_pre.jpg"></a>
               </div><!--img_box-->
               <div class="text_box">
                 <h3>
@@ -131,26 +103,28 @@
 
                 <p>
                   <!-- <a href="./g_preparation.html"> -->
-                  エレキギターの制作に向けての準備段階を紹介しています．
+                  エレキギターの制作に向けての準備段階を紹介しています。
                   <!-- </a> -->
                 </p>
                 <ul>
                   <li>制作する楽器・種類の選定</li>
-                  <li>必要な材料，部品の検討・購入</li>
+                  <li>必要な材料、部品の検討・購入</li>
                   <li>加工に必要な道具や機械を調べる</li>
                 </ul>
+                <a href="./g_preparation.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./g_preparation.html">詳しくみる</a>
+                    詳しくみる
                   </span>
                 </div><!--link_btn-->
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
 
 
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/g_body.jpg" class="order_img">
+                <a href="./g_making.html"><img src="./img/work_process/g_body.jpg" class="order_img"></a>
               </div><!--img_box-->
               <div class="text_box">
                 <h3>
@@ -159,35 +133,35 @@
                   </a>
                 </h3>
                 <p>
-                  ボディ材の粗加工から，仮組みまでを紹介しています．
+                  ボディ材の粗加工から、仮組みまでを紹介しています。
                 </p>
                 <ul>
-                  <li>ボディ材粗加工， 各ポケットのザグリ加工</li>
-                  <li>パーツ位置決め，仮取り付け</li>
+                  <li>ボディ材粗加工、 各ポケットのザグリ加工</li>
+                  <li>パーツ位置決め、仮取り付け</li>
                   <li>ネックプレート制作</li>
                   <li>仮組み</li>
                 </ul>
+                <a href="./g_making.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./g_making.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
 
 
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/g_paint.jpg" class="order_img">
+                <a href="./g_paint.html"><img src="./img/work_process/g_paint.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
                 <h3>
                   <a href="./g_paint.html">拭き漆での塗装</a>
                 </h3>
                 <p>
-                  ギターの塗装を拭き漆で行った過程を紹介しています．
+                  ギターの塗装を拭き漆で行った過程を紹介しています。
                 </p>
                 <ul>
                   <li>塗装方法検討</li>
@@ -199,27 +173,27 @@
                   <li>漆塗装４回目</li>
                   <li>漆塗装５回目</li>
                 </ul>
+                <a href="./g_paint.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./g_paint.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
 
 
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/g_complete.jpg" class="order_img">
+                <a href="./g_finish.html"><img src="./img/work_process/g_complete.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
                 <h3>
                   <a href="./g_finish.html">試奏・調整</a>
                 </h3>
                 <p>
-                  完成前の調整と試奏した動画を載せています．
+                  完成前の調整と試奏した動画を載せています。
                 </p>
                 <ul>
                   <li>配線作業</li>
@@ -227,13 +201,13 @@
                   <li>フレット擦り合わせ</li>
                   <li>完成</li>
                 </ul>
+                <a href="./g_finish.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./g_finish.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
           </div><!--order_box-->
@@ -247,57 +221,57 @@
           <div class="order_box"><!--order_box ギターケースの方-->
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/c_design.jpg" class="order_img">
+                <a href="./c_design.html"><img src="./img/work_process/c_design.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
                 <h3>
                   <a href="./c_design.html">構想・設計</a>
                 </h3>
                 <p>
-                  ギターケースの制作に向けての設計段階をについてまとめています．
+                  ギターケースの制作に向けての設計段階をについてまとめています。
                 </p>
                 <ul>
-                  <li>ケース形状，使用材料等検討</li>
-                  <li>ギター採寸，設計図制作</li>
+                  <li>ケース形状、使用材料等検討</li>
+                  <li>ギター採寸、設計図制作</li>
                 </ul>
+                <a href="./c_design.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./c_design.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+              </a>
               </div><!--text_box-->
             </div><!--detail-->
 
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/c_making.jpg" class="order_img">
+                <a href="./c_making.html"><img src="./img/work_process/c_making.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
                 <h3>
                   <a href="./c_making.html">ケース本制作</a>
                 </h3>
                 <p>
-                  ケースに使用する材料の選定から，ケース本体の制作，仮組みまでの過程を紹介しています．
+                  ケースに使用する材料の選定から、ケース本体の制作、仮組みまでの過程を紹介しています。
                 </p>
                 <ul>
-                  <li>木材選定，切断，接着</li>
+                  <li>木材選定、切断、接着</li>
                   <li>金具取り付け</li>
                 </ul>
+                <a href="./c_making.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./c_making.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
 
             <div class="detail">
               <div class="img_box">
-                <img src="./img/work_process/c_decoration.jpg" class="order_img">
+                <a href="./c_decoration.html"><img src="./img/work_process/c_decoration.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
                 <h3>
@@ -306,51 +280,49 @@
                   </a>
                 </h3>
                 <p>
-                  ケースの外装を寄木細工を使って装飾した際の工程を紹介しています．
+                  ケースの外装を寄木細工を使って装飾した際の工程を紹介しています。
                 </p>
                 <ul>
                   <li>装飾方法検討</li>
-                  <li>木材選定，部材作成</li>
+                  <li>木材選定、部材作成</li>
                   <li>天板装飾部材作成</li>
                   <li>側板装飾部材作成</li>
                   <li>底板装飾</li>
                 </ul>
+                <a href="./c_decoration.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./c_decoration.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
 
             <div class="detail line_none">
               <div class="img_box">
-                <img src="./img/work_process/c_interior.jpg" class="order_img">
+                <a href="./c_interior.html"><img src="./img/work_process/c_interior.jpg" class="order_img"></a>
               </div>
               <div class="text_box">
-                <a href="./c_interior.html">
                   <h3>
                     <a href="./c_interior.html">内装制作</a>
                   </h3>
                   <p>
-                    内装材選定から生地の貼り付けなど，ケースの内装を制作した過程を紹介しています．
+                    内装材選定から生地の貼り付けなど、ケースの内装を制作した過程を紹介しています。
                   </p>
                   <ul>
                     <li>蓋側内装制作</li>
                     <li>底板内装制作</li>
                     <li>設計ミス修正</li>
-                    <li>組み立て，完成</li>
+                    <li>組み立て、完成</li>
                   </ul>
-                </a>
+                  <a href="./c_interior.html">
                 <div class="link_btn">
                   <span class="btn_a">
-                    <a href="./c_interior.html">
                       詳しくみる
-                    </a>
                   </span>
                 </div>
+                </a>
               </div><!--text_box-->
             </div><!--detail-->
           </div><!--order_box ギターケースの方-->
@@ -380,7 +352,7 @@
               </a>
             </h4>
             <h4>
-              <a href="./work_process.html#guitar_make">
+              <a href="./work_process.html#make_guitar">
                 拭き漆ギター制作
               </a>
             </h4>
@@ -415,12 +387,12 @@
               </dt>
               <dd>
                 <a href="./g_making.html#a_2">
-                  ボディ材粗加工， 各ポケットのザグリ加工
+                  ボディ材粗加工、 各ポケットのザグリ加工
                 </a>
               </dd>
               <dd>
                 <a href="./g_making.html#a_3">
-                  パーツ位置決め，仮取り付け
+                  パーツ位置決め、仮取り付け
                 </a>
               </dd>
               <dd>
@@ -430,7 +402,7 @@
               </dd>
               <dd>
                 <a href="./g_making.html#a_5">
-                  仮組み，試奏
+                  仮組み、試奏
                 </a>
               </dd>
             </dl>
@@ -523,12 +495,12 @@
               </dt>
               <dd>
                 <a href="./c_design.html#a_2">
-                  ケース形状，使用材料等検討
+                  ケース形状、使用材料等検討
                 </a>
               </dd>
               <dd>
                 <a href="./c_design.html#a_3">
-                  ギター採寸，設計図制作
+                  ギター採寸、設計図制作
                 </a>
               </dd>
             </dl>
@@ -541,11 +513,11 @@
               </dt>
               <dd>
                 <a href="./c_making.html#a_2">
-                  木材選定，切断，接着
+                  木材選定、切断、接着
                 </a>
               </dd>
               <dd>
-                <a href="./c_making.html#a_2">
+                <a href="./c_making.html#a_3">
                   金具取り付け
                 </a>
               </dd>
@@ -564,7 +536,7 @@
               </dd>
               <dd>
                 <a href="./c_decoration.html#a_3">
-                  木材選定，部材作成
+                  木材選定、部材作成
                 </a>
               </dd>
               <dd>
@@ -607,7 +579,7 @@
               </dd>
               <dd>
                 <a href="./c_interior.html#a_5">
-                  組み立て，完成
+                  組み立て、完成
                 </a>
               </dd>
             </dl>
@@ -692,9 +664,10 @@
       </strong>
     </p>
   </footer>
+  <script src="./js/nav.js?v=2"></script>
 
 
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js?v=2"></script>
 
 </body>
 

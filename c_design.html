@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>ケース　構想・設計 - 素人によるギター＆ギターケース制作</title>
-  <link href="./css/reset.css" rel="stylesheet" type="text/css">
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css?v=2" rel="stylesheet" type="text/css">
+  <link href="./css/main.css?v=5" rel="stylesheet" type="text/css">
 
 
   <!-- Google tag (gtag.js) -->
@@ -20,6 +20,8 @@
   </script>
 </head>
 
+<body>
+
 <div class="rogo_box">
   <a href="index.html">
     <!-- <img class="rogo" src="./rogo/png/rogo_3_kirigiri_neck.png"> -->
@@ -27,65 +29,41 @@
     </span>
   </a>
 </div>
+  <!-- ナビゲーション -->
+  <button class="nav_toggle" id="nav_toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav_drawer">
+    <span></span><span></span><span></span>
+  </button>
 
-<header>
-  <div class="nav_btn">
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-  </div>
-  <div id="header_box">
-    <span>
-      メニュ〜
-    </span>
-    <div class="menu_box">
-      <ul class="menu_left">
-        <li class="menu_li weight">
-          <a href="index.html">TOP</a>
-        </li>
-        <li class="menu_li">
-          <a href="./index.html#event_div1">このサイトについて</a>
-        </li>
-      </ul>
+  <div class="nav_overlay" id="nav_overlay"></div>
 
-      <ul class="menu_center m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html">拭き漆ギター制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_preparation.html">制作に向けた準備</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_making.html">ギター本制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">塗装</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">完成</a>
-        </li>
-      </ul>
+  <nav class="nav_drawer" id="nav_drawer" aria-hidden="true">
+    <button class="nav_close" id="nav_close" type="button" aria-label="メニューを閉じる">×</button>
 
-      <ul class="menu_right m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html#make_case">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">構想・設計</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">装飾</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">完成</a>
-        </li>
+    <ul class="nav_drawer_list">
+      <li class="nav_drawer_top"><a href="./index.html">TOP</a></li>
+      <li class="nav_drawer_top"><a href="./index.html#event_div1">このサイトについて</a></li>
+    </ul>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_guitar">拭き漆ギター制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./g_preparation.html">制作に向けた準備</a></li>
+        <li><a href="./g_making.html">ギター本制作</a></li>
+        <li><a href="./g_paint.html">拭き漆での塗装</a></li>
+        <li><a href="./g_finish.html">試奏・調整</a></li>
       </ul>
     </div>
-  </div>
-</header>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_case">寄木細工ギターケース制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./c_design.html">構想・設計</a></li>
+        <li><a href="./c_making.html">ケース本制作</a></li>
+        <li><a href="./c_decoration.html">ケース装飾</a></li>
+        <li><a href="./c_interior.html">内装制作</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <main>
   <section id="l_key">
@@ -97,7 +75,7 @@
 
   <section class="main_content">
     <!-- <p class="h1_explanetion">
-      ギターを制作するために，調べたこと，用意したことをまとめました．
+      ギターを制作するために、調べたこと、用意したことをまとめました。
     </p> -->
 
     <div id="all_box">
@@ -107,22 +85,22 @@
         </h1>
         <div class="order_box order_pre">
           <p>
-            前回まで行っていた拭き漆ギターの制作が終了し．ここで制作は終了の予定ではありましたが，この際ケースも作ろうと考えギターケースも追加で制作することに決めました．ここまできたらもはや勢いです．
+            前回まで行っていた拭き漆ギターの制作が終了し。ここで制作は終了の予定ではありましたが、この際ケースも作ろうと考えギターケースも追加で制作することに決めました。ここまできたらもはや勢いです。
           </p>
           <p>
-            制作に向けてギター同様，ケースの形状などの選定と設計から行っていきます．
+            制作に向けてギター同様、ケースの形状などの選定と設計から行っていきます。
           </p>
 
 
           <h2 class="hl2 h2_pre" id="a_2">
-            ケース形状，使用材料等検討
+            ケース形状、使用材料等検討
           </h2>
           <p>
-            ギターのケースには一般的に，<u>ソフトケース</u>，<u>ハードケース</u>に２種類に分けられます．
-            ソフトケースは軽量のため楽器を容易に持ち運ぶことができます．
+            ギターのケースには一般的に、<u>ソフトケース</u>、<u>ハードケース</u>に２種類に分けられます。
+            ソフトケースは軽量のため楽器を容易に持ち運ぶことができます。
           </p>
           <p>
-            ハードケースは，その名の通りソフトケースより堅牢で耐久性に優れています．強度や持ち運びやすさを考慮し，今回はハードケースを作ることに決めました．問題の重量からくる持ち運びやすさの観点は，比較的軽い材料を選んで軽量化を図ります．
+            ハードケースは、その名の通りソフトケースより堅牢で耐久性に優れています。強度や持ち運びやすさを考慮し、今回はハードケースを作ることに決めました。問題の重量からくる持ち運びやすさの観点は、比較的軽い材料を選んで軽量化を図ります。
           </p>
 
 
@@ -132,7 +110,7 @@
 
 
           <h2 class="hl2 h2_pre" id="a_3">
-            ギター採寸，設計図制作
+            ギター採寸、設計図制作
           </h2>
 
           <div class="detail">
@@ -144,7 +122,7 @@
                 普段は直感でものを作りがちなのですが、今回はスケールが大きく、失敗できないためまずはケースの三面図を描き、寸法も決めていきます。
               </p>
               <p>
-                製図は高校在学時に少し齧った程度ですが，凝ったものを描こうとしなくても大体の形と，それに伴った寸法が記載されていれば十分に使える設計図になると思います．設計図に加えて，ギターを縮小した紙を用意し，イメージしやすしています．（画像左上側）
+                製図は高校在学時に少し齧った程度ですが、凝ったものを描こうとしなくても大体の形と、それに伴った寸法が記載されていれば十分に使える設計図になると思います。設計図に加えて、ギターを縮小した紙を用意し、イメージしやすしています。（画像左上側）
               </p>
             </div>
           </div>
@@ -219,7 +197,7 @@
             </a>
           </h4>
           <h4>
-            <a href="./work_process.html#guitar_make">
+            <a href="./work_process.html#make_guitar">
               拭き漆ギター制作
             </a>
           </h4>
@@ -254,12 +232,12 @@
             </dt>
             <dd>
               <a href="./g_making.html#a_2">
-                ボディ材粗加工， 各ポケットのザグリ加工
+                ボディ材粗加工、 各ポケットのザグリ加工
               </a>
             </dd>
             <dd>
               <a href="./g_making.html#a_3">
-                パーツ位置決め，仮取り付け
+                パーツ位置決め、仮取り付け
               </a>
             </dd>
             <dd>
@@ -269,7 +247,7 @@
             </dd>
             <dd>
               <a href="./g_making.html#a_5">
-                仮組み，試奏
+                仮組み、試奏
               </a>
             </dd>
           </dl>
@@ -362,12 +340,12 @@
             </dt>
             <dd>
               <a href="./c_design.html#a_2">
-                ケース形状，使用材料等検討
+                ケース形状、使用材料等検討
               </a>
             </dd>
             <dd>
               <a href="./c_design.html#a_3">
-                ギター採寸，設計図制作
+                ギター採寸、設計図制作
               </a>
             </dd>
           </dl>
@@ -380,7 +358,7 @@
             </dt>
             <dd>
               <a href="./c_making.html#a_2">
-                木材選定，切断，接着
+                木材選定、切断、接着
               </a>
             </dd>
             <dd>
@@ -403,7 +381,7 @@
             </dd>
             <dd>
               <a href="./c_decoration.html#a_3">
-                木材選定，部材作成
+                木材選定、部材作成
               </a>
             </dd>
             <dd>
@@ -446,7 +424,7 @@
             </dd>
             <dd>
               <a href="./c_interior.html#a_5">
-                組み立て，完成
+                組み立て、完成
               </a>
             </dd>
           </dl>
@@ -528,7 +506,9 @@
     </strong>
   </p>
 </footer>
+  <script src="./js/nav.js?v=2"></script>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2"></script>
 
+</body>
 </html>

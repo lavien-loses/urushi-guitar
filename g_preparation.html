@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>制作に向けた準備 - 素人によるギター＆ギターケース制作</title>
-  <link href=" ./css/reset.css" rel="stylesheet" type="text/css">
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css?v=2" rel="stylesheet" type="text/css">
+  <link href="./css/main.css?v=5" rel="stylesheet" type="text/css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JPY5P55CD"></script>
@@ -19,6 +19,8 @@
   </script>
 </head>
 
+<body>
+
 <div class="rogo_box">
   <a href="index.html">
     <!-- <img class="rogo" src="./rogo/png/rogo_3_kirigiri_neck.png"> -->
@@ -26,65 +28,42 @@
     </span>
   </a>
 </div>
+  <!-- ナビゲーション -->
+  <button class="nav_toggle" id="nav_toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav_drawer">
+    <span></span><span></span><span></span>
+  </button>
 
-<header>
-  <div class="nav_btn">
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-  </div>
-  <div id="header_box">
-    <span>
-      メニュ〜
-    </span>
-    <div class="menu_box">
-      <ul class="menu_left">
-        <li class="menu_li weight">
-          <a href="index.html">TOP</a>
-        </li>
-        <li class="menu_li">
-          <a href="./index.html#event_div1">このサイトについて</a>
-        </li>
-      </ul>
+  <div class="nav_overlay" id="nav_overlay"></div>
 
-      <ul class="menu_center m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html">拭き漆ギター制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_preparation.html">制作に向けた準備</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_making.html">ギター本制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">塗装</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">完成</a>
-        </li>
-      </ul>
+  <nav class="nav_drawer" id="nav_drawer" aria-hidden="true">
+    <button class="nav_close" id="nav_close" type="button" aria-label="メニューを閉じる">×</button>
 
-      <ul class="menu_right m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html#make_case">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">構想・設計</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">装飾</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">完成</a>
-        </li>
+    <ul class="nav_drawer_list">
+      <li class="nav_drawer_top"><a href="./index.html">TOP</a></li>
+      <li class="nav_drawer_top"><a href="./index.html#event_div1">このサイトについて</a></li>
+    </ul>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_guitar">拭き漆ギター制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./g_preparation.html">制作に向けた準備</a></li>
+        <li><a href="./g_making.html">ギター本制作</a></li>
+        <li><a href="./g_paint.html">拭き漆での塗装</a></li>
+        <li><a href="./g_finish.html">試奏・調整</a></li>
       </ul>
     </div>
-  </div>
-</header>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_case">寄木細工ギターケース制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./c_design.html">構想・設計</a></li>
+        <li><a href="./c_making.html">ケース本制作</a></li>
+        <li><a href="./c_decoration.html">ケース装飾</a></li>
+        <li><a href="./c_interior.html">内装制作</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
 <main>
   <section id="l_key">
@@ -96,7 +75,7 @@
 
   <section class="main_content">
     <!-- <p class="h1_explanetion">
-      ギターを制作するために，調べたこと，用意したことをまとめました．
+      ギターを制作するために、調べたこと、用意したことをまとめました。
     </p> -->
 
     <div id="all_box">
@@ -106,18 +85,18 @@
         </h1>
         <div class="order_box order_pre">
           <p>
-            高校から始めた楽器を1から作ろうと思ったきっかけは，ギターは欲しいが新品でギターを買うのは非常に高価であること，現在在籍している短期大学に木工関連の設備が整備されていたから．
+            高校から始めた楽器を1から作ろうと思ったきっかけは、ギターは欲しいが新品でギターを買うのは非常に高価であること、現在在籍している短期大学に木工関連の設備が整備されていたからです。
           </p>
           <p>
-            道具とか揃っちゃってるし，<b>あっさり作れちゃうんじゃない？？</b>，という安易もいいところではないかという考えで制作することを決めました．
+            道具とか揃っちゃってるし、<b>あっさり作れちゃうんじゃない？？</b>、という安易もいいところではないかという考えで制作することを決めました。
           </p>
-          <p>まず初めに，どのようなギターを作るかを決めることにしました．</p>
+          <p>まず初めに、どのようなギターを作るかを決めることにしました。</p>
 
           <h2 class="hl2 h2_pre" id="a_2">
             制作する楽器・種類の設定
           </h2>
 
-          <p>どんなギターを作ろうか検討するため，インターネット等でギターの種類について調べて流ことにしました．アコースティックギターとエレキギターの大まかな分類は分かっていたものの，細かい種類については</p>
+          <p>どんなギターを作ろうか検討するため、インターネット等でギターの種類について調べて流ことにしました。アコースティックギターとエレキギターの大まかな分類は分かっていたものの、細かい種類については</p>
           <div class="detail detail_pre">
             <blockquote
               cite="https://www.fender.com/ja-JP/online-shop-exclusive/american-vintage-ii-1961-stratocaster/0110250840.html">
@@ -152,22 +131,22 @@
               </cite>
             </blockquote>
 
-            <p>上記の他にも，ジャズマスタータイプや，フライングVタイプ，モッキンバードタイプといった変形ギターなどがあることを知りました．
+            <p>上記の他にも、ジャズマスタータイプや、フライングVタイプ、モッキンバードタイプといった変形ギターなどがあることを知りました。
             </p>
 
             <p>
-              さらに調べていく中で．エスクワイヤーというエレキギターの存在を知りました．上記で紹介したテレキャスタータイプの<u>フロントピックアップ（エレキギターの音を拾う部品．ここではネック側についている方を指す）</u>が付いていないもの，といえば分かりやすいかもしれません．
+              さらに調べていく中で、エスクワイヤーというエレキギターの存在を知りました。上記で紹介したテレキャスタータイプの<u>フロントピックアップ（エレキギターの音を拾う部品。ここではネック側についている方を指す）</u>が付いていないもの、といえば分かりやすいかもしれません。
             </p>
-            <p>シンプルなデザインであることや，部品数や加工の手間が他のエレキギターよりも少ないのでは？と考え，エスクワイヤータイプのエレキギターを制作することに決めました．</p>
+            <p>シンプルなデザインであることや、部品数や加工の手間が他のエレキギターよりも少ないのでは？と考え、エスクワイヤータイプのエレキギターを制作することに決めました。</p>
           </div><!--detail detail_pre-->
 
 
           <h2 class="hl2 h2_pre" id="a_3">
-            必要な材料，部品の検討・購入
+            必要な材料、部品の検討・購入
           </h2>
 
-          <p>制作するものが決まったので，次はどんなものが必要かを調べて，制作に備えることにしました．</p>
-          <p>インターネットで，エレキギターを制作する上で必要なものを実際にギターを自作した方のサイト等を参考にまとめました．</p>
+          <p>制作するものが決まったので、次はどんなものが必要かを調べて、制作に備えることにしました。</p>
+          <p>インターネットで、エレキギターを制作する上で必要なものを実際にギターを自作した方のサイト等を参考にまとめました。</p>
 
           <ul>
             <li>
@@ -187,7 +166,7 @@
           </ul>
 
           <p>
-            上記があればなんとか作れるだろうと思い，少ないバイト代を叩いて材料を購入しました．今回は初めての制作で不慣れのため，制作難易度の高いネックの制作は諦め，既製品を購入することにしました．
+            上記があればなんとか作れるだろうと思い、少ないバイト代を叩いて材料を購入しました。今回は初めての制作で不慣れのため、制作難易度の高いネックの制作は諦め、既製品を購入することにしました。
           </p>
 
 
@@ -196,11 +175,11 @@
               <img src="./img/g_pro/tree.jpg">
             </div>
             <div class="text_box">
-              <p>①ボディに用いる木材は，楽器用の木材を専門に取り扱う
+              <p>①ボディに用いる木材は、楽器用の木材を専門に取り扱う
                 <span>
                   <a
-                    href="http://www.aimokukakou.jp/">アイモク</a>のサイトから購入しました．幅広い種類の木材を取り扱っておりどの木材にするか迷ってしまいます．今回は一番安かったアルダーという種類の木材の2
-                  P（木材同士を接着して一枚の板にした集成材，一枚板よりお値段が安くなる）を選びました．送料込みで7〜8000円ほどです．
+                    href="http://www.aimokukakou.jp/">アイモク</a>のサイトから購入しました。幅広い種類の木材を取り扱っておりどの木材にするか迷ってしまいます。今回は一番安かったアルダーという種類の木材の2
+                  P（木材同士を接着して一枚の板にした集成材。一枚板よりお値段が安くなる）を選びました。送料込みで7〜8000円ほどです。
                 </span>
               </p>
             </div>
@@ -212,7 +191,7 @@
             </div>
             <div class="text_box">
               <p>
-                ②ネックとコントロールノブ，配線材などはオークションやamazonで購入しました．ここで，届いた部品の基盤が破損しているというオークションの洗礼を受けます．しっかりとしたものを作りたい方は少々値段が張っても正規品を購入することをお勧めします．
+                ②ネックとコントロールノブ、配線材などはオークションやamazonで購入しました、ここで、届いた部品の基盤が破損しているというオークションの洗礼を受けます、しっかりとしたものを作りたい方は少々値段が張っても正規品を購入することをお勧めします。
               </p>
             </div>
           </div>
@@ -223,26 +202,26 @@
             加工に必要な道具や機械を調べる
           </h2>
           <p>
-            材料や工程を調べていくに伴い，加工に必要な道具も少しずつ判明してきました．幸い私が在籍する学校には先述したように，木工関連の機械や道具はあらかた揃っているため，自分から用意する必要はありませんでした．学校にあるどの機械，道具を使えば効率よく制作できるかを考え，おおよそ使用するであろうものに目星をつけました．
+            材料や工程を調べていくに伴い、加工に必要な道具も少しずつ判明してきました、幸い私が在籍する学校には先述したように、木工関連の機械や道具はあらかた揃っているため、自分から用意する必要はありませんでした。学校にあるどの機械、道具を使えば効率よく制作できるかを考え、おおよそ使用するであろうものに目星をつけました。
           </p>
 
           <div class="detail none">
             <div class="img_box center">
               <img src="./img/g_pro/meca/s_scale.jpg">
               <p>
-                スコヤです．直角を出したり，線引きする際に重宝します．
+                スコヤです。直角を出したり、線引きする際に重宝します。
               </p>
             </div>
             <div class="img_box center">
               <img src="./img/g_pro/meca/yasuri.jpg">
               <p>
-                棒ヤスリです．平らな面と湾曲した面の二つの顔を持ちあわせているため，様々な場所で使います．
+                棒ヤスリです。平らな面と湾曲した面の二つの顔を持ちあわせているため、様々な場所で使います。
               </p>
             </div>
             <div class="img_box center">
               <img src="./img/g_pro/meca/torima.jpg">
               <p>
-                トリマーです．面取りや，ピックアップを入れる溝を掘る際などに使います．これがあるとかなり楽に作業できると思います．
+                トリマーです。面取りや、ピックアップを入れる溝を掘る際などに使います。これがあるとかなり楽に作業できると思います。
               </p>
             </div>
           </div>
@@ -250,9 +229,9 @@
 
 
           <p>
-            初めて一から材料や部品について調べ，購入するという本制作への準備段階の一連の流れではありましたが，初めてでもそこまで難しいことや面倒なことはなかったと感じています．逆に，より一層作るぞ！，という意欲が増し，気が引き締まる思いです．
+            初めて一から材料や部品について調べ、購入するという本制作への準備段階の一連の流れではありましたが、初めてでもそこまで難しいことや面倒なことはなかったと感じています。逆に、より一層作るぞ！、という意欲が増し、気が引き締まる思いです。
           </p>
-          <p>↓次回から，本制作の工程に移ります．↓</p>
+          <p>↓次回から、本制作の工程に移ります。↓</p>
         </div><!--order_box order_pre-->
 
 
@@ -332,7 +311,7 @@
             </a>
           </h4>
           <h4>
-            <a href="./work_process.html#guitar_make">
+            <a href="./work_process.html#make_guitar">
               拭き漆ギター制作
             </a>
           </h4>
@@ -367,12 +346,12 @@
             </dt>
             <dd>
               <a href="./g_making.html#a_2">
-                ボディ材粗加工， 各ポケットのザグリ加工
+                ボディ材粗加工、 各ポケットのザグリ加工
               </a>
             </dd>
             <dd>
               <a href="./g_making.html#a_3">
-                パーツ位置決め，仮取り付け
+                パーツ位置決め、仮取り付け
               </a>
             </dd>
             <dd>
@@ -382,7 +361,7 @@
             </dd>
             <dd>
               <a href="./g_making.html#a_5">
-                仮組み，試奏
+                仮組み、試奏
               </a>
             </dd>
           </dl>
@@ -475,12 +454,12 @@
             </dt>
             <dd>
               <a href="./c_design.html#a_2">
-                ケース形状，使用材料等検討
+                ケース形状、使用材料等検討
               </a>
             </dd>
             <dd>
               <a href="./c_design.html#a_3">
-                ギター採寸，設計図制作
+                ギター採寸、設計図制作
               </a>
             </dd>
           </dl>
@@ -493,7 +472,7 @@
             </dt>
             <dd>
               <a href="./c_making.html#a_2">
-                木材選定，切断，接着
+                木材選定、切断、接着
               </a>
             </dd>
             <dd>
@@ -516,7 +495,7 @@
             </dd>
             <dd>
               <a href="./c_decoration.html#a_3">
-                木材選定，部材作成
+                木材選定、部材作成
               </a>
             </dd>
             <dd>
@@ -559,7 +538,7 @@
             </dd>
             <dd>
               <a href="./c_interior.html#a_5">
-                組み立て，完成
+                組み立て、完成
               </a>
             </dd>
           </dl>
@@ -641,7 +620,9 @@
     </strong>
   </p>
 </footer>
+  <script src="./js/nav.js?v=2"></script>
 
-<script src="./js/script.js"></script>
+<script src="./js/script.js?v=2"></script>
 
+</body>
 </html>

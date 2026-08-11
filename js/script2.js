@@ -1,4 +1,7 @@
 
+const navToggleTop = document.getElementById('nav_toggle');
+if (navToggleTop) navToggleTop.classList.add('is-hidden');
+
 window.onscroll = () => {
   const now = window.scrollY;
   const size = window.innerHeight;
@@ -9,14 +12,18 @@ window.onscroll = () => {
   const link1 = document.getElementById('a_switch');
   const link2 = document.getElementById('a_switch2');
 
+  if (navToggleTop) {
+    navToggleTop.classList.toggle('is-hidden', now < 20);
+  }
+
   if (now >= size * 4) {
     if (now && size) {
       lpage.style.opacity = "0";
       rpage.style.opacity = "0";
       k_1.classList.add("k_h");
       k_3.classList.add("k_h");
-      a_switch.style.display = "block"
-      a_switch2.style.display = "block"
+      link1.style.display = "block"
+      link2.style.display = "block"
     }
   } else if (now >= size * 3) {
     if (now && size) {
@@ -46,7 +53,7 @@ window.onscroll = () => {
     rpage.style.opacity = "1";
     k_1.classList.remove("k_h");
     k_3.classList.remove("k_h");
-    a_switch.style.display = "none"
-    a_switch2.style.display = "none"
+    link1.style.display = "none"
+    link2.style.display = "none"
   }
 }

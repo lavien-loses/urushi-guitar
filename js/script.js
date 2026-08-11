@@ -8,7 +8,7 @@ function Change() {
     //ここに.svgimgを消して.svg_changeを追加する
     svg.classList.remove("svgimg");
     svg.classList.add("svg_change")
-  } else if (number < 500) {
+  } else if (number <= 400) {
     svg.classList.add("svgimg");
     svg.classList.remove("svg_change");
   }
@@ -22,7 +22,7 @@ function home() {
   if (now > 500) {
     btn.style.display = "block";
     btn.style.transition = "1s";
-    btn.style.opacity = "0.5";
+    btn.style.opacity = "0.75";
   } else {
     btn.style.display = "none";
     btn.style.opacity = "0";

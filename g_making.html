@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>ギター本制作 - 素人によるギター＆ギターケース制作</title>
-  <link href="./css/reset.css" rel="stylesheet" type="text/css">
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css?v=2" rel="stylesheet" type="text/css">
+  <link href="./css/main.css?v=5" rel="stylesheet" type="text/css">
 
 
   <!-- Google tag (gtag.js) -->
@@ -20,6 +20,8 @@
   </script>
 </head>
 
+<body>
+
 <div class="rogo_box">
   <a href="index.html">
     <!-- <img class="rogo" src="./rogo/png/rogo_3_kirigiri_neck.png"> -->
@@ -27,65 +29,42 @@
     </span>
   </a>
 </div>
+  <!-- ナビゲーション -->
+  <button class="nav_toggle" id="nav_toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav_drawer">
+    <span></span><span></span><span></span>
+  </button>
 
-<header>
-  <div class="nav_btn">
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-  </div>
-  <div id="header_box">
-    <span>
-      メニュ〜
-    </span>
-    <div class="menu_box">
-      <ul class="menu_left">
-        <li class="menu_li weight">
-          <a href="index.html">TOP</a>
-        </li>
-        <li class="menu_li">
-          <a href="./index.html#event_div1">このサイトについて</a>
-        </li>
-      </ul>
+  <div class="nav_overlay" id="nav_overlay"></div>
 
-      <ul class="menu_center m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html">拭き漆ギター制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_preparation.html">制作に向けた準備</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_making.html">ギター本制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">塗装</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">完成</a>
-        </li>
-      </ul>
+  <nav class="nav_drawer" id="nav_drawer" aria-hidden="true">
+    <button class="nav_close" id="nav_close" type="button" aria-label="メニューを閉じる">×</button>
 
-      <ul class="menu_right m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html#make_case">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">構想・設計</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">装飾</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">完成</a>
-        </li>
+    <ul class="nav_drawer_list">
+      <li class="nav_drawer_top"><a href="./index.html">TOP</a></li>
+      <li class="nav_drawer_top"><a href="./index.html#event_div1">このサイトについて</a></li>
+    </ul>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_guitar">拭き漆ギター制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./g_preparation.html">制作に向けた準備</a></li>
+        <li><a href="./g_making.html">ギター本制作</a></li>
+        <li><a href="./g_paint.html">拭き漆での塗装</a></li>
+        <li><a href="./g_finish.html">試奏・調整</a></li>
       </ul>
     </div>
-  </div>
-</header>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_case">寄木細工ギターケース制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./c_design.html">構想・設計</a></li>
+        <li><a href="./c_making.html">ケース本制作</a></li>
+        <li><a href="./c_decoration.html">ケース装飾</a></li>
+        <li><a href="./c_interior.html">内装制作</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
 <main>
   <section id="l_key">
@@ -97,7 +76,7 @@
 
   <section class="main_content">
     <!-- <p class="h1_explanetion">
-      ギターを制作するために，調べたこと，用意したことをまとめました．
+      ギターを制作するために、調べたこと、用意したことをまとめました。
     </p> -->
 
     <div id="all_box">
@@ -107,25 +86,25 @@
         </h1>
         <div class="order_box order_pre">
           <p>
-            材料があらかた揃ったので，いよいよギターの本制作に入っていきます．まずはボディ材の荒加工から行っていきたいと思います．
+            材料があらかた揃ったので、いよいよギターの本制作に入っていきます。まずはボディ材の荒加工から行っていきたいと思います。
           </p>
-          <p>まず初めに，どのようなギターを作るかを決めることにしました．</p>
+          <p>まず初めに、どのようなギターを作るかを決めることにしました。</p>
 
 
 
           <h2 class="hl2 h2_pre" id="a_2">
-            ボディ材粗加工， 各ポケットのザグリ加工
+            ボディ材粗加工、 各ポケットのザグリ加工
           </h2>
 
           <p>
-            今回制作するのは，エスクワイヤータイプのエレキギターですが，形状としてはテレキャスタータイプと同じであり，フロントピックアップがあるかないかという違いだけなのでひとまずテレキャスターを作るイメージで制作を進めていきたいと思います．
+            今回制作するのは、エスクワイヤータイプのエレキギターですが、形状としてはテレキャスタータイプと同じであり、フロントピックアップがあるかないかという違いだけなのでひとまずテレキャスターを作るイメージで制作を進めていきたいと思います。
           </p>
 
           <p>
-            そのため，今回テンプレートとしてテレキャスタータイプのものを使っていきます．テンプレートは<span>
+            そのため、今回テンプレートとしてテレキャスタータイプのものを使っていきます。テンプレートは<span>
               <a href="https://www.electricherald.com/guitar-templates/">electricherald</a>
             </span>
-            というフリーでギターのテンプレートをダウンロードできるサイトから拝借したものを，原寸サイズに直して印刷し，ベニヤ板に貼り付けました．
+            というフリーでギターのテンプレートをダウンロードできるサイトから拝借したものを、原寸サイズに直して印刷し、ベニヤ板に貼り付けました。
           </p>
 
 
@@ -136,7 +115,7 @@
                 <img src="img/g_making/templete.jpg">
               </div>
               <div class="flex_text">
-                <p>テンプレートを印刷し，ボディ材に貼り合わせて切断していきます．</p>
+                <p>テンプレートを印刷し、ボディ材に貼り合わせて切断していきます。</p>
               </div>
             </li>
 
@@ -145,7 +124,7 @@
                 <img src="img/g_making/making.jpg">
               </div>
               <div class="flex_text">
-                <p>貼り合わせて切断していきます．</p>
+                <p>貼り合わせて切断していきます。</p>
               </div>
             </li>
 
@@ -154,7 +133,7 @@
                 <img src="img/g_making/finish.jpg">
               </div>
               <div class="flex_text">
-                <p>貼り合わせて切断していきます．</p>
+                <p>貼り合わせて切断していきます。</p>
               </div>
             </li>
           </ul> -->
@@ -167,7 +146,7 @@
             </div>
             <div class="text_box">
               <p>
-                ①印刷したテンプレートをベニヤ板に貼り付け，ボディ材にさらに貼り合わせて切断していきます．のこぎりやヤスリを使い分けながらテンプレートの形になるように仕上げていきます．湾曲した部分の加工は手にヤスリをつけてかけることで，綺麗な曲線にすることができました．
+                ①印刷したテンプレートをベニヤ板に貼り付け、ボディ材にさらに貼り合わせて切断していきます。のこぎりやヤスリを使い分けながらテンプレートの形になるように仕上げていきます。湾曲した部分の加工は手にヤスリをつけてかけることで、綺麗な曲線にすることができました。
               </p>
             </div>
           </div>
@@ -179,7 +158,7 @@
             </div>
             <div class="text_box">
               <p>
-                ③大まかな形になってきたら，ベルトサンダーと紙やすりで最終的なボディの形に整形していきます．ネックポケットの深さは18mmに設定しました．（ネックポケットが深いと，<u>弦の高さが上がってしまう</u>．浅いとその逆で<u>指板と弦が開放弦でも常に触れてしまう状態になる</u>．）
+                ③大まかな形になってきたら、ベルトサンダーと紙やすりで最終的なボディの形に整形していきます。ネックポケットの深さは18mmに設定しました。（ネックポケットが深いと、<u>弦の高さが上がってしまう</u>。浅いとその逆で<u>指板と弦が開放弦でも常に触れてしまう状態になる</u>。）
               </p>
             </div>
           </div>
@@ -191,7 +170,7 @@
 
             <div class="text_box">
               <p>
-                ②ピックアップとネックを取り付けるためのザグリ加工です．一度ドリルでトリマーの葉が入るくらいの穴を開け，そこにトリマーをセットして切削していきます．初めてトリマーを使う方は，一度ボディ材等の加工などで出た端材で練習した方が，後々後悔しないで済むと思われます．
+                ②ピックアップとネックを取り付けるためのザグリ加工です。一度ドリルでトリマーの葉が入るくらいの穴を開け、そこにトリマーをセットして切削していきます。初めてトリマーを使う方は、一度ボディ材等の加工などで出た端材で練習した方が、後々後悔しないで済むと思われます。
               </p>
             </div>
           </div>
@@ -202,7 +181,7 @@
             </div>
             <div class="caution_text">
               <p>
-                トリマーに不慣れであったため，ネックポケットの加工の際に，トリマーの刃がボディの角に当たり欠損させてしまいました．ネックポケットはそのギターの『運命』を決める重要な部分です．トリマーをしっかり練習して，ゆっくり正確に加工しましょう．
+                トリマーに不慣れであったため、ネックポケットの加工の際に、トリマーの刃がボディの角に当たり欠損させてしまいました。ネックポケットはそのギターの『運命』を決める重要な部分です。トリマーをしっかり練習して、ゆっくり正確に加工しましょう。
               </p>
             </div>
           </section>
@@ -211,11 +190,11 @@
 
 
           <h2 class="hl2 h2_pre" id="a_3">
-            パーツ位置決め，仮取り付け
+            パーツ位置決め、仮取り付け
           </h2>
 
           <p>
-            塗装の前に音の鳴りが気になる，という理由を作り（本当はただ早く弾きたいだけ）パーツの位置決めをすることにしました．
+            塗装の前に音の鳴りが気になる、という理由を作り（本当はただ早く弾きたいだけ）パーツの位置決めをすることにしました。
           </p>
           <div class="detail">
             <div class="img_box center">
@@ -223,7 +202,7 @@
             </div>
             <div class="text_box">
               <p>
-                ブリッジやネックを取り付けるには，スケール（弦巻き器からブリッジまでの長さ）の寸法を知る必要がありました．ここを妥協してしまうと，オクターブ（簡単に言うと音の精度を良くするための調整）が合わなくなるとのことでした．今回は，Fender社のテレキャスターのスケール<u>"634mm"</u>を目安に部品を取り付けました．
+                ブリッジやネックを取り付けるには、スケール（弦巻き器からブリッジまでの長さ）の寸法を知る必要がありました。ここを妥協してしまうと、オクターブ（簡単に言うと音の精度を良くするための調整）が合わなくなるとのことでした。今回は、Fender社のテレキャスターのスケール<u>"634mm"</u>を目安に部品を取り付けました。
               </p>
             </div>
           </div>
@@ -234,7 +213,7 @@
             ネックプレート制作
           </h2>
           <p>
-            パーツの位置を入念に何度も計測し，部品を取り付けていた時，私はネックをボディに固定するために必要な<b>ネックプレート</b>を購入していないことに気づきました．購入しようか迷いましたが，早く引きたい衝動にかられ，あり物でネックプレートを制作してしまうことにしました．
+            パーツの位置を入念に何度も計測し、部品を取り付けていた時、私はネックをボディに固定するために必要な<b>ネックプレート</b>を購入していないことに気づきました。購入しようか迷いましたが、早く引きたい衝動にかられ、あり物でネックプレートを制作してしまうことにしました。
           </p>
 
           <div class="detail">
@@ -243,8 +222,8 @@
             </div>
             <div class="text_box">
               <p>
-                学校の備品の中で使えそうなものを探し，おそらく使われていなかったであろう，
-                金属プレートを見繕いました．左の画像は，金切りのこで大まかな加工をしています．
+                学校の備品の中で使えそうなものを探し、おそらく使われていなかったであろう、
+                金属プレートを見繕いました。左の画像は、金切りのこで大まかな加工をしています。
               </p>
             </div>
           </div>
@@ -255,7 +234,7 @@
             </div>
             <div class="text_box">
               <p>
-                いきなりプレートに穴が4つも空いてしまっています．ここには掲載していませんが，４辺を切断する前にネジが入る穴を加工した方が良いと考え，先に加工をしました．
+                いきなりプレートに穴が4つも空いてしまっています。ここには掲載していませんが、４辺を切断する前にネジが入る穴を加工した方が良いと考え、先に加工をしました。
               </p>
             </div>
           </div>
@@ -266,7 +245,7 @@
             </div>
             <div class="text_box">
               <p>
-                プレートの４辺を荒加工の際同様，金切りのこで切り落とした後，鉄工やすりでバリ取り，仕上げにピカール（液体研磨剤）を使って磨きました．
+                プレートの４辺を荒加工の際同様、金切りのこで切り落とした後、鉄工やすりでバリ取り、仕上げにピカール（液体研磨剤）を使って磨きました。
               </p>
             </div>
           </div>
@@ -277,24 +256,24 @@
             </div>
             <div class="text_box">
               <p>
-                最後の研磨の際に強く擦りすぎてしまい，縦の傷が目立ってしまいましたが，なんとかただの金属板をネックプレートとして使えるように加工できました．
+                最後の研磨の際に強く擦りすぎてしまい、縦の傷が目立ってしまいましたが、なんとかただの金属板をネックプレートとして使えるように加工できました。
               </p>
             </div>
           </div>
 
 
           <h2 class="hl2 h2_pre" id="a_5">
-            仮組み，試奏
+            仮組み、試奏
           </h2>
 
           <p>
-            ネックプレートも完成し，ネックをつけられる状態になり仮組み，実際に弦を貼ることができる状態までになりました．
+            ネックプレートも完成し、ネックをつけられる状態になり仮組み、実際に弦を貼ることができる状態までになりました。
           </p>
-          <p>画像にはありませんが，実際に試奏もしてみました．配線をしていないので生音ではありましたが，思っていた以上に生音の鳴りが良く，自分が作ったものから音が出たことに感動しました．</p>
+          <p>画像にはありませんが、実際に試奏もしてみました。配線をしていないので生音ではありましたが、思っていた以上に生音の鳴りが良く、自分が作ったものから音が出たことに感動しました。</p>
 
           <img src="./img/g_making/before_paint.jpg" class="img_center">
 
-          <p>↓次回からは．拭き漆による塗装に入ります．↓</p>
+          <p>↓次回からは。拭き漆による塗装に入ります。↓</p>
 
         </div><!--detail detail_pre-->
 
@@ -363,7 +342,7 @@
             </a>
           </h4>
           <h4>
-            <a href="./work_process.html#guitar_make">
+            <a href="./work_process.html#make_guitar">
               拭き漆ギター制作
             </a>
           </h4>
@@ -398,12 +377,12 @@
             </dt>
             <dd>
               <a href="./g_making.html#a_2">
-                ボディ材粗加工， 各ポケットのザグリ加工
+                ボディ材粗加工、 各ポケットのザグリ加工
               </a>
             </dd>
             <dd>
               <a href="./g_making.html#a_3">
-                パーツ位置決め，仮取り付け
+                パーツ位置決め、仮取り付け
               </a>
             </dd>
             <dd>
@@ -413,7 +392,7 @@
             </dd>
             <dd>
               <a href="./g_making.html#a_5">
-                仮組み，試奏
+                仮組み、試奏
               </a>
             </dd>
           </dl>
@@ -506,12 +485,12 @@
             </dt>
             <dd>
               <a href="./c_design.html#a_2">
-                ケース形状，使用材料等検討
+                ケース形状、使用材料等検討
               </a>
             </dd>
             <dd>
               <a href="./c_design.html#a_3">
-                ギター採寸，設計図制作
+                ギター採寸、設計図制作
               </a>
             </dd>
           </dl>
@@ -524,7 +503,7 @@
             </dt>
             <dd>
               <a href="./c_making.html#a_2">
-                木材選定，切断，接着
+                木材選定、切断、接着
               </a>
             </dd>
             <dd>
@@ -547,7 +526,7 @@
             </dd>
             <dd>
               <a href="./c_decoration.html#a_3">
-                木材選定，部材作成
+                木材選定、部材作成
               </a>
             </dd>
             <dd>
@@ -590,7 +569,7 @@
             </dd>
             <dd>
               <a href="./c_interior.html#a_5">
-                組み立て，完成
+                組み立て、完成
               </a>
             </dd>
           </dl>
@@ -672,7 +651,9 @@
     </strong>
   </p>
 </footer>
+  <script src="./js/nav.js?v=2"></script>
 
-<script src="./js/script.js"></script>
+<script src="./js/script.js?v=2"></script>
 
+</body>
 </html>

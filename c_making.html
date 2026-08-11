@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>ケース本制作 - 素人によるギター＆ギターケース制作</title>
-  <link href="./css/reset.css" rel="stylesheet" type="text/css">
-  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <link href="./css/reset.css?v=2" rel="stylesheet" type="text/css">
+  <link href="./css/main.css?v=5" rel="stylesheet" type="text/css">
 
 
   <!-- Google tag (gtag.js) -->
@@ -20,6 +20,8 @@
   </script>
 </head>
 
+<body>
+
 <div class="rogo_box">
   <a href="index.html">
     <!-- <img class="rogo" src="./rogo/png/rogo_3_kirigiri_neck.png"> -->
@@ -27,65 +29,42 @@
     </span>
   </a>
 </div>
+  <!-- ナビゲーション -->
+  <button class="nav_toggle" id="nav_toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav_drawer">
+    <span></span><span></span><span></span>
+  </button>
 
-<header>
-  <div class="nav_btn">
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-    <span class="menu_icon">MENU</span>
-  </div>
-  <div id="header_box">
-    <span>
-      メニュ〜
-    </span>
-    <div class="menu_box">
-      <ul class="menu_left">
-        <li class="menu_li weight">
-          <a href="index.html">TOP</a>
-        </li>
-        <li class="menu_li">
-          <a href="./index.html#event_div1">このサイトについて</a>
-        </li>
-      </ul>
+  <div class="nav_overlay" id="nav_overlay"></div>
 
-      <ul class="menu_center m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html">拭き漆ギター制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_preparation.html">制作に向けた準備</a>
-        </li>
-        <li class="menu_li">
-          <a href="g_making.html">ギター本制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">塗装</a>
-        </li>
-        <li class="menu_li">
-          <a href="#">完成</a>
-        </li>
-      </ul>
+  <nav class="nav_drawer" id="nav_drawer" aria-hidden="true">
+    <button class="nav_close" id="nav_close" type="button" aria-label="メニューを閉じる">×</button>
 
-      <ul class="menu_right m_flex">
-        <li class="menu_li weight">
-          <a href="work_process.html#make_case">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">構想・設計</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">制作</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">装飾</a>
-        </li>
-        <li class="menu_li">
-          <a href="work_case.html">完成</a>
-        </li>
+    <ul class="nav_drawer_list">
+      <li class="nav_drawer_top"><a href="./index.html">TOP</a></li>
+      <li class="nav_drawer_top"><a href="./index.html#event_div1">このサイトについて</a></li>
+    </ul>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_guitar">拭き漆ギター制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./g_preparation.html">制作に向けた準備</a></li>
+        <li><a href="./g_making.html">ギター本制作</a></li>
+        <li><a href="./g_paint.html">拭き漆での塗装</a></li>
+        <li><a href="./g_finish.html">試奏・調整</a></li>
       </ul>
     </div>
-  </div>
-</header>
+
+    <div class="nav_drawer_group">
+      <p class="nav_drawer_heading"><a href="./work_process.html#make_case">寄木細工ギターケース制作</a></p>
+      <ul class="nav_drawer_list">
+        <li><a href="./c_design.html">構想・設計</a></li>
+        <li><a href="./c_making.html">ケース本制作</a></li>
+        <li><a href="./c_decoration.html">ケース装飾</a></li>
+        <li><a href="./c_interior.html">内装制作</a></li>
+      </ul>
+    </div>
+  </nav>
+
 
 <main>
   <section id="l_key">
@@ -97,7 +76,7 @@
 
   <section class="main_content">
     <!-- <p class="h1_explanetion">
-      ギターを制作するために，調べたこと，用意したことをまとめました．
+      ギターを制作するために、調べたこと、用意したことをまとめました。
     </p> -->
 
     <div id="all_box">
@@ -107,19 +86,19 @@
         </h1>
         <div class="order_box order_pre">
           <p>
-            ケース制作に入っていきます。早速ケース本体を作っていきます。作った経験はもちろんありませんが，<b>大きな箱を作って二つにぶった斬るイメージ</b>で制作していきました．
-            木材を採寸、切断してから組みあげていきます．
+            ケース制作に入っていきます。早速ケース本体を作っていきます。作った経験はもちろんありませんが、<b>大きな箱を作って二つにぶった斬るイメージ</b>で制作していきました。
+            木材を採寸、切断してから組みあげていきます。
           </p>
 
 
           <h2 class="hl2 h2_pre" id="a_2">
-            木材選定・切断，接着
+            木材選定・切断、接着
           </h2>
           <p>
-            今回ケース本体の大枠は木材を使って作成していきます．このケースには耐久性はそこまで求めず，重量のあるがっしりとした木材ではなく，ハードケースサイズになっても苦にならない程度の重量になることを目指しています．
+            今回ケース本体の大枠は木材を使って作成していきます。このケースには耐久性はそこまで求めず、重量のあるがっしりとした木材ではなく、ハードケースサイズになっても苦にならない程度の重量になることを目指しています。
           </p>
           <p>
-            使う木材は学校にあるものから選ぶ事にしましたが，集成材ではなくやはり無垢材にするべきかで悩んでしまいました．初めて作るとはいえ，もしかしたら死ぬまで使う事になるかもしれない，そんなことを考えていましたが結果的に木材は　　　を使う事にしました
+            使う木材は学校にあるものから選ぶ事にしましたが、集成材ではなくやはり無垢材にするべきかで悩んでしまいました。初めて作るとはいえ、もしかしたら死ぬまで使う事になるかもしれない、そんなことを考えていましたが結果的に木材は　　　を使う事にしました
           </p>
 
 
@@ -129,10 +108,10 @@
             </div>
             <div class="text_box">
               <p>
-                ケースの全長は，横約1080mm，縦135mm，奥行き約395mmとサイズが大きいため，手動での切断も考えましたがここは文明の力，パネルソーを使っていきたいと思います．
+                ケースの全長は、横約1080mm、縦135mm、奥行き約395mmとサイズが大きいため、手動での切断も考えましたがここは文明の力、パネルソーを使っていきたいと思います。
               </p>
               <p>
-                学校の授業で使用する機会はありましたが，木材のサイズが大きいため機械へのセットに少し苦労しました．この手の機械は，<b>切断する寸法＋刃物の厚さをプラスして切断</b>しないと，刃物の厚さ分短くなってしまうので注意が必要です．
+                学校の授業で使用する機会はありましたが、木材のサイズが大きいため機械へのセットに少し苦労しました。この手の機械は、<b>切断する寸法＋刃物の厚さをプラスして切断</b>しないと、刃物の厚さ分短くなってしまうので注意が必要です。
               </p>
             </div>
           </div>
@@ -143,10 +122,10 @@
             </div>
             <div class="text_box">
               <p>
-                切断した部材をボンドと木ネジを使って接着・固定していきます．木ネジの長さは接着後にケースごと半分に切断する際に刃物に当たらないよう，ケースの高さの中心まで届かない長さにしています．
+                切断した部材をボンドと木ネジを使って接着・固定していきます。木ネジの長さは接着後にケースごと半分に切断する際に刃物に当たらないよう、ケースの高さの中心まで届かない長さにしています。
               </p>
               <p>
-                ボンドで接着したら上から押さえつけて圧着します．隙間から溢れてきた余分なボンドは拭き取りましょう．拭き取っておくと表面を研磨する際に楽になります．
+                ボンドで接着したら上から押さえつけて圧着します。隙間から溢れてきた余分なボンドは拭き取りましょう。拭き取っておくと表面を研磨する際に楽になります。
               </p>
             </div>
           </div>
@@ -157,10 +136,10 @@
             </div>
             <div class="text_box">
               <p>
-                接着した箱を半分に切断します．蓋と底板を別々に作らずに，このように大きな箱を作って切断する方が綺麗にできるという情報を得たのでこの方法を採用しました．
+                接着した箱を半分に切断します。蓋と底板を別々に作らずに、このように大きな箱を作って切断する方が綺麗にできるという情報を得たのでこの方法を採用しました。
               </p>
               <p>
-                結果はうまく行った方だと思います．少し欠けてしまった部分やずれてしまった部分はありますが，サイズと切断の難易度的にその点は仕方がないと思います．別々での制作よりこの方法が綺麗にケースの形にすることが可能であることが知れて良かったです．
+                結果はうまく行った方だと思います。少し欠けてしまった部分やずれてしまった部分はありますが、サイズと切断の難易度的にその点は仕方がないと思います。別々での制作よりこの方法が綺麗にケースの形にすることが可能であることが知れて良かったです。
               </p>
             </div>
           </div>
@@ -172,7 +151,7 @@
             金具取り付け
           </h2>
           <p>
-            これからケースとして機能を果たしていくには，まずは蓋が開閉して鍵がついていることであると考えました．そのために必要な鍵と蓋の開閉を支える蝶番，ステーの取り付けを行います．
+            これからケースとして機能を果たしていくには、まずは蓋が開閉して鍵がついていることであると考えました。そのために必要な鍵と蓋の開閉を支える蝶番、ステーの取り付けを行います。
           </p>
 
           <div class="detail">
@@ -181,7 +160,7 @@
             </div>
             <div class="text_box">
               <p>
-                今回使う蝶番はテスト用のような扱いです．実際に蝶番と鍵の取り付け位置を決め，付けてみてケースとして機能するかを装飾や内装作業に着手する前に確認しておくために使いたいと思います．本格的に組み上げる際にはもう一回り大きいものに交換する予定です．
+                今回使う蝶番はテスト用のような扱いです。実際に蝶番と鍵の取り付け位置を決め、付けてみてケースとして機能するかを装飾や内装作業に着手する前に確認しておくために使いたいと思います。本格的に組み上げる際にはもう一回り大きいものに交換する予定です。
               </p>
               <p>
 
@@ -195,10 +174,10 @@
             </div>
             <div class="text_box">
               <p>
-                蝶番をつけたら，ついでにステーもつけていきます．このステーは蓋を開けた際に，開口角度の制限と，ストッパーの役割を果たしてくれる優れものです．
+                蝶番をつけたら、ついでにステーもつけていきます。このステーは蓋を開けた際に、開口角度の制限と、ストッパーの役割を果たしてくれる優れものです。
               </p>
               <p>
-                本当は左右両方の蓋に取り付けたかったのですが，互い違いでこの部品がありませんでした．しかし片方側だけでも十分機能しているのでそのままにしました．
+                本当は左右両方の蓋に取り付けたかったのですが、互い違いでこの部品がありませんでした。しかし片方側だけでも十分機能しているのでそのままにしました。
               </p>
             </div>
           </div>
@@ -209,10 +188,10 @@
             </div>
             <div class="text_box">
               <p>
-                最後に鍵を取り付けていきます．最後に鍵をつけるのは，<b>鍵の蓋側の差し込み口と底板側の受け口をピッタリ合わせたかったため</b>です．鍵は蝶番とは違って完成後もこの鍵を使っていく予定です．盗まれる時はケースごと持ってけや，そんな感じで腹を括っています．
+                最後に鍵を取り付けていきます。最後に鍵をつけるのは、<b>鍵の蓋側の差し込み口と底板側の受け口をピッタリ合わせたかったため</b>です。鍵は蝶番とは違って完成後もこの鍵を使っていく予定です。盗まれる時はケースごと持ってけや、そんな感じで腹を括っています。
               </p>
               <p>
-                ケースの上下左右から均一な位置で鍵を取り付けていきます．後から鍵をつけて正解でした．しっかりと上下でピッタリハマってくれました．
+                ケースの上下左右から均一な位置で鍵を取り付けていきます。後から鍵をつけて正解でした。しっかりと上下でピッタリハマってくれました。
               </p>
             </div>
           </div>
@@ -226,10 +205,10 @@
 
               </p>
               <p>
-                部品を取り付け終わり，蓋を開け閉めしてみたり，鍵をガチャガチャいじってみたりと動作確認をしました．鍵もしっかり施錠でき，ステーもきちんと仕事をしています．やはり方が少し出てしまうケースの上下の触れ合う部分は，ヤスリで調整しておきがたつきを抑えることができました．
+                部品を取り付け終わり、蓋を開け閉めしてみたり、鍵をガチャガチャいじってみたりと動作確認をしました。鍵もしっかり施錠でき、ステーもきちんと仕事をしています。やはり方が少し出てしまうケースの上下の触れ合う部分は、ヤスリで調整しておきがたつきを抑えることができました。
               </p>
               <p>
-                ただの長方形の巨大な箱から，ケースっぽいものに形を変えることができました．ここから装飾を施し，内装を作り，ケースと呼べるものに仕上げていきたいと思います．
+                ただの長方形の巨大な箱から、ケースっぽいものに形を変えることができました。ここから装飾を施し、内装を作り、ケースと呼べるものに仕上げていきたいと思います。
               </p>
             </div>
           </div>
@@ -239,7 +218,7 @@
 
           <!-- <img src="img/g_paint/5/wipe2.jpg" class="img_center"> -->
 
-          <p>↓次回は，ケースの印象を左右する外装の装飾をしていきます↓</p>
+          <p>↓次回は、ケースの印象を左右する外装の装飾をしていきます↓</p>
 
         </div><!--detail detail_pre-->
 
@@ -308,7 +287,7 @@
             </a>
           </h4>
           <h4>
-            <a href="./work_process.html#guitar_make">
+            <a href="./work_process.html#make_guitar">
               拭き漆ギター制作
             </a>
           </h4>
@@ -343,12 +322,12 @@
             </dt>
             <dd>
               <a href="./g_making.html#a_2">
-                ボディ材粗加工， 各ポケットのザグリ加工
+                ボディ材粗加工、 各ポケットのザグリ加工
               </a>
             </dd>
             <dd>
               <a href="./g_making.html#a_3">
-                パーツ位置決め，仮取り付け
+                パーツ位置決め、仮取り付け
               </a>
             </dd>
             <dd>
@@ -358,7 +337,7 @@
             </dd>
             <dd>
               <a href="./g_making.html#a_5">
-                仮組み，試奏
+                仮組み、試奏
               </a>
             </dd>
           </dl>
@@ -451,12 +430,12 @@
             </dt>
             <dd>
               <a href="./c_design.html#a_2">
-                ケース形状，使用材料等検討
+                ケース形状、使用材料等検討
               </a>
             </dd>
             <dd>
               <a href="./c_design.html#a_3">
-                ギター採寸，設計図制作
+                ギター採寸、設計図制作
               </a>
             </dd>
           </dl>
@@ -469,7 +448,7 @@
             </dt>
             <dd>
               <a href="./c_making.html#a_2">
-                木材選定，切断，接着
+                木材選定、切断、接着
               </a>
             </dd>
             <dd>
@@ -492,7 +471,7 @@
             </dd>
             <dd>
               <a href="./c_decoration.html#a_3">
-                木材選定，部材作成
+                木材選定、部材作成
               </a>
             </dd>
             <dd>
@@ -535,7 +514,7 @@
             </dd>
             <dd>
               <a href="./c_interior.html#a_5">
-                組み立て，完成
+                組み立て、完成
               </a>
             </dd>
           </dl>
@@ -617,8 +596,10 @@
     </strong>
   </p>
 </footer>
+  <script src="./js/nav.js?v=2"></script>
 
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2"></script>
 
+</body>
 </html>
