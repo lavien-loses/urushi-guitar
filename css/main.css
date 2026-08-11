@@ -36,9 +36,7 @@
     --step-4:  clamp(2rem,    5vw,    3.4rem);
 }
 
-/* ============================================================
-   Reset
-   ============================================================ */
+/********** 初期設定 **********/
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0; padding: 0;
@@ -52,8 +50,7 @@ html {
 }
 
 body {
-    font-family: 'myfont', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-                 'YuGothic', 'Yu Gothic', sans-serif;
+    font-family: 'myfont', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans','YuGothic', 'Yu Gothic', sans-serif;
     color: var(--ink);
     line-height: 1.9;
     letter-spacing: .035em;
@@ -71,9 +68,7 @@ img  { display: block; max-width: 100%; height: auto; }
 strong { color: inherit; font-weight: 700; }
 u { text-underline-offset: 3px; }
 
-/* ============================================================
-   Logo  ─  fixed top-left
-   ============================================================ */
+/********** ロゴ設定 **********/
 .rogo_box {
     position: fixed;
     top: 1rem; left: 1rem;
@@ -95,9 +90,7 @@ u { text-underline-offset: 3px; }
     transition: opacity .25s;
 }
 
-/* ============================================================
-   ナビゲーション（ハンバーガーメニュー）
-   ============================================================ */
+/********** ナビゲーションメニュー設定 **********/
 .nav_toggle {
     position: fixed;
     top: 1rem; right: 1rem;
@@ -234,10 +227,7 @@ html.nav_locked, html.nav_locked body { overflow: hidden; }
 }
 .nav_drawer_group .nav_drawer_list a.is-current::before { left: -.1em; }
 
-/* ============================================================
-   ━━━  TOP PAGE  ━━━
-   3カラム: k_1 (fixed left) | k_2 (scroll center) | k_3 (fixed right)
-   ============================================================ */
+/********** トップページ設定 **********/
 .key_visual {
     display: flex;
     width: 100%;
@@ -372,9 +362,7 @@ html.nav_locked, html.nav_locked body { overflow: hidden; }
     45%       { transform: translateY(14px); }
 }
 
-/* ============================================================
-   ━━━  CONTENT PAGES  ━━━
-   ============================================================ */
+/********** メイン設定 **********/
 
 /* ── Key visual ── */
 .l_key_img {
@@ -465,7 +453,7 @@ html.nav_locked, html.nav_locked body { overflow: hidden; }
     font-size: var(--step-2);
     font-weight: 700;
     letter-spacing: .06em;
-    margin-top: clamp(3rem, 6vw, 5rem);
+    margin-top: clamp(3.5rem, 6vw, 5rem);
     padding-bottom: .7rem;
     border-bottom: 2px solid var(--line);
     position: relative;
@@ -573,6 +561,10 @@ html.nav_locked, html.nav_locked body { overflow: hidden; }
     position: relative;
     z-index: 1;
     padding-top: .25rem;
+}
+
+.text_box p {
+    margin-bottom: 1rem;
 }
 
 .detail h3 {
@@ -695,6 +687,7 @@ span a:hover {
     border: 1px solid var(--line);
     box-shadow: var(--sh-xs);
     border-radius: var(--r);
+    min-height: 330px;
 }
 
 .detail.none .img_box img {
@@ -776,9 +769,7 @@ span a:hover {
 video     { width: 68%; display: block; margin: 2rem auto; }
 .video_box { box-shadow: none !important; }
 
-/* ============================================================
-   サイドバー
-   ============================================================ */
+/********** サイドバー設定 **********/
 .right_box {
     grid-column: 2;
     grid-row: 1;
@@ -833,9 +824,7 @@ video     { width: 68%; display: block; margin: 2rem auto; }
     border-color: var(--gold);
 }
 
-/* ============================================================
-   パンくずリスト
-   ============================================================ */
+/********** パンくずリスト **********/
 .bread_box {
     margin-top: 3rem;
     padding: .45em .8em;
@@ -866,9 +855,7 @@ video     { width: 68%; display: block; margin: 2rem auto; }
 .bread_none::after { display: none; }
 .ol_list a { display: inline; }
 
-/* ============================================================
-   次の記事ナビ
-   ============================================================ */
+/********** 次の記事ナビ **********/
 .next_box {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -949,9 +936,7 @@ video     { width: 68%; display: block; margin: 2rem auto; }
     font-weight: 500;
 }
 
-/* ============================================================
-   コンテンツページ詳細 (g_preparation, etc.)
-   ============================================================ */
+/********** コンテンツページ詳細 (g_preparation, etc.) **********/
 .detail_pre {
     display: block;
     margin-top: 3rem;
@@ -982,6 +967,8 @@ cite {
     color: var(--gold-mid) !important;
     text-decoration: underline !important;
     text-underline-offset: 2px;
+    display: block;
+    text-align: center;
 }
 
 .detail_pre2 { border: none; box-shadow: none; }
@@ -994,9 +981,8 @@ cite {
 /* work_process page */
 .hl1 { text-align: center; }
 
-/* ============================================================
-   フッター
-   ============================================================ */
+
+/********** フッター **********/
 footer {
     margin-top: clamp(6rem, 12vw, 12rem);
     background: var(--ink);
@@ -1014,8 +1000,6 @@ footer a:hover   { color: var(--white); }
     padding: 3.5rem 2rem 2rem;
     gap: 1.5rem 2rem;
 }
-
-.f_lbox, .f_cbox, .f_rbox { }
 
 .menu_li.weight a {
     font-size: .8rem;
@@ -1044,9 +1028,7 @@ footer p {
     letter-spacing: .05em;
 }
 
-/* ============================================================
-   トップへ戻るボタン
-   ============================================================ */
+/********** トップへ戻るボタン **********/
 #back_btn {
     display: none;
     position: fixed;
@@ -1092,9 +1074,7 @@ footer p {
     border-right-color: var(--gold);
 }
 
-/* ============================================================
-   ━━━  RESPONSIVE  ━━━
-   ============================================================ */
+/********** レスポンシブ設定 **********/
 
 /* ── 900px: サイドバー縮小 ── */
 @media (max-width: 900px) {
@@ -1133,10 +1113,11 @@ footer p {
 
     .next_box { grid-template-columns: 1fr; }
     .now_link { border-right: none; border-bottom: 1px solid var(--line); }
-    .next_link { text-align: left; padding: 1.5rem 1.2rem 1.5rem 3rem; }
+    .next_link { text-align: left; padding: 1.5rem 3rem 1.5rem 1.2rem; }
     .next_link .flex_box { flex-direction: row; }
     .next_link::before {
-        right: auto; left: 1.1rem;
+        right: 1.1rem; 
+        left: auto;
         transform: translateY(-50%) rotate(45deg);
     }
 
@@ -1179,7 +1160,7 @@ footer p {
         gap: 1rem;
     }
 
-    .detail::before { font-size: 2.5rem; top: 1.4rem; right: 0; }
+    .detail::before { font-size: 2rem; top: 1.4rem; right: 0; }
 
     .img_box  { max-width: 100%; }
     .img_box img { max-width: 88%; margin: 0 auto; }
@@ -1191,6 +1172,19 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         gap: .75rem;
     }
+    
+    /* 詳しくみるボタン */
+    .text_box a {
+        display: block;
+        text-align: center;
+    }
+    
+    .link_btn {
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        margin: 1.4rem auto 0 auto;
+    }
 
     .order_pre p  { font-size: .88rem; }
 
@@ -1200,6 +1194,7 @@ footer p {
     .flex_box img { width: 42px; height: 30px; }
     .flex_box p   { font-size: .78rem; }
     .now_label, .next_label { font-size: .6rem; }
+    .next_label {text-align: right;}
 
     /* パンくず */
     .ol_list li { font-size: .62rem; }
